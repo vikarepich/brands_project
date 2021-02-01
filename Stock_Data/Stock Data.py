@@ -1,5 +1,6 @@
 import csv
 
+
 GOOG = "GOOG.csv"
 GOOG_2 = "GOOG_2.csv"
 
