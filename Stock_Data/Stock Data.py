@@ -10,7 +10,6 @@ NKE_2 = "NKE_2.csv"
 TSLA = "TSLA.csv"
 TSLA_2 = "TSLA_2.csv"
 
-
 with open(GOOG, 'r', newline='') as f, open(GOOG_2, 'w', newline='') as data:
      writer = csv.writer(data, delimiter=',', quoting=csv.QUOTE_NONE, escapechar=',')
      writer.writerows(line.split() for line in f)
