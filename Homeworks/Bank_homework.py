@@ -23,7 +23,7 @@ class Account:
         if amount >= 0:
             self._balance += amount
             if self._balance >= amount:
-             print("Bank balance: " + str(amount) + ". Bank balance new: " + str(self._balance))
+             print("Homeworks balance: " + str(amount) + ". Homeworks balance new: " + str(self._balance))
         else:
             print("Only deposit withdrawal is restricted!")
 
@@ -33,17 +33,17 @@ class Account:
                 print("Maximum withdrawal amout is 999,99 per transaction")
             else:
                 self._balance -= amount
-                print("Charged: " + str(amount) + ". Bank balance new: " + str(self._balance))
+                print("Charged: " + str(amount) + ". Homeworks balance new: " + str(self._balance))
         else:
-            print("Sorry, Bank balance is lower than your withdrawal request: " + str(amount))
+            print("Sorry, Homeworks balance is lower than your withdrawal request: " + str(amount))
 
     def calc_interest(self):
         self._balance += self.interest_rate*self._balance
-        print("Bank balance new " + str(self._balance))
+        print("Homeworks balance new " + str(self._balance))
         pass
 
     def get_balance(self):
-        print("Bank balance: " + str(self._balance))
+        print("Homeworks balance: " + str(self._balance))
         return self._balance
 
     def __repr__(self):
@@ -72,7 +72,7 @@ class Bank:
         pass
 
     def __repr__(self):
-        return 'Bank(cust: {0}, acc: {1})'.format(self.customers, self.accounts)
+        return 'Homeworks(cust: {0}, acc: {1})'.format(self.customers, self.accounts)
 
 
 bank = Bank()
