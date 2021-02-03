@@ -10,7 +10,6 @@ class Customer:
     def __repr__(self):
         return self.__class__.__name__ + "(" + str(self.customer_id) + "): " + self.first_name + " " + self.last_name + " (" + self.email + ")"
 
-
 class Account:
     last_id = 0
     def __init__(self, customer):
